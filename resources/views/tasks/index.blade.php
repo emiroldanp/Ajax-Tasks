@@ -8,13 +8,12 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <form method="POST" action="{{ route('tasks.store') }}">
             @csrf
             <input type="text" name="description" id="">
-            <input type="submit" value="Crear">
-        </form>
+            <input type="button" value="Crear" onclick="createTask();">
     </div>
 </div>
+<br>
 <div class="row">
     <div class="col-12">
         <table class="table">
@@ -44,4 +43,13 @@
     </div>
 </div>
 @endsection
+
+@push('layout_end_body')
+<script>
+    function createTask() {
+        console.log('Crea la tarea');
+    }
+</script>
+
+@endpush
 
