@@ -13,8 +13,9 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    @yield('content')
-    <h1>Hello, world!</h1>
+      <div class="container">
+        @yield('content')
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
