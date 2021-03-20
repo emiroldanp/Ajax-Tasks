@@ -60,7 +60,8 @@
             }
         })
         .done(function(response) {
-            console.log('Exitoso', response);
+            $('#description').val('');
+            $('.table tbody').append('<tr><td>' + response.id + '</td><td>' + response.description + '</td><td>si</td></tr>');
         })
         .fail(function(jqXHR, response) {
             console.log('Fallido', response);
